@@ -1,0 +1,117 @@
+/* Basic Styles for Interactive Assignment */
+
+body {
+    font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', Arial, sans-serif;
+    background: #ffe6f7;
+    color: #6d4c41;
+    margin: 0;
+    padding: 0 0 40px 0;
+    transition: background 0.4s, color 0.4s;
+}
+header {
+    background: linear-gradient(90deg, #ffb3de 40%, #b3eaff 100%);
+    color: #fff;
+    padding: 1.5em;
+    text-align: center;
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 4px 16px rgba(255, 179, 222, 0.15);
+}
+section {
+    margin: 2em auto;
+    max-width: 500px;
+    background: #fff0fa;
+    padding: 2em;
+    border-radius: 24px;
+    box-shadow: 0 4px 16px rgba(179, 234, 255, 0.12);
+    border: 2px solid #ffe6f7;
+}
+button {
+    padding: 0.7em 1.3em;
+    margin: 0.7em 0;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #ffb3de 60%, #b3eaff 100%);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(255, 179, 222, 0.10);
+    transition: background 0.3s;
+}
+button:hover {
+    background: linear-gradient(90deg, #b3eaff 60%, #ffb3de 100%);
+    color: #fff;
+}
+.faq-answer {
+    display: none;
+    margin: 0.7em 0 1.2em 0;
+    padding: 0.7em;
+    background: #eafff7;
+    border-radius: 16px;
+    font-size: 1em;
+    color: #6d4c41;
+    box-shadow: 0 2px 8px rgba(179, 234, 255, 0.10);
+}
+.faq-answer.show {
+    display: block;
+}
+.error {
+    color: #ff6f91;
+    font-size: 0.95em;
+    margin-left: 0.5em;
+    font-weight: bold;
+}
+.success {
+    color: #4dd0e1;
+    font-size: 1.1em;
+    margin-top: 1em;
+    font-weight: bold;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 0.7em;
+    margin: 0.3em 0 0.7em 0;
+    border: 2px solid #b3eaff;
+    border-radius: 16px;
+    font-size: 1.05em;
+    background: #fff;
+    color: #6d4c41;
+    box-shadow: 0 2px 8px rgba(179, 234, 255, 0.08);
+    transition: border 0.3s;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border: 2px solid #ffb3de;
+    outline: none;
+}
+/* Cute Dark mode styles */
+body.dark-mode {
+    background: #d1c4e9;
+    color: #fff;
+}
+body.dark-mode header {
+    background: linear-gradient(90deg, #b39ddb 40%, #80deea 100%);
+    color: #fff;
+}
+body.dark-mode section {
+    background: #b39ddb;
+    color: #fff;
+    border: 2px solid #d1c4e9;
+}
+body.dark-mode button {
+    background: linear-gradient(90deg, #80deea 60%, #b39ddb 100%);
+    color: #fff;
+}
+body.dark-mode button:hover {
+    background: linear-gradient(90deg, #b39ddb 60%, #80deea 100%);
+}
+body.dark-mode .faq-answer {
+    background: #80deea;
+    color: #fff;
+}
+body.dark-mode input[type="text"],
+body.dark-mode input[type="email"],
+body.dark-mode input[type="password"] {
+    background: #d1c4e9;
+    color: #fff;
+    border: 2px solid #80deea;
+}

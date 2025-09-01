@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>Welcome to the Cozy Crochet Playground! 🧶</h1>
+    </header>
+
+    <!-- Light/Dark Mode Toggle -->
+    <section>
+    <button id="toggle-mode">🌞 Switch to Yarn Night Mode</button>
+    </section>
+
+    <!-- Counter Feature -->
+    <section>
+    <h2>Stitch Counter 🧵</h2>
+    <button id="counter-btn">You stitched <span id="counter-value">0</span> times! 🧵</button>
+    </section>
+
+    <!-- Collapsible FAQ Section -->
+    <section>
+        <h2>Crochet FAQ (Frequently Asked Yarn-quiries) �</h2>
+        <div class="faq-item">
+            <button class="faq-question">What’s the secret to a perfect granny square? 🟪</button>
+            <div class="faq-answer">A cozy cup of tea, your favorite yarn, and a sprinkle of patience!</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Can I crochet with friends online? 🧑‍🤝‍🧑</button>
+            <div class="faq-answer">Of course! Virtual stitch-alongs are the best way to share yarny joy.</div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+        <h2>Join the Crochet Crew! 🧶</h2>
+        <form id="signup-form" novalidate>
+            <div>
+                <label for="name">Your Yarn Name:</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Loopy Lucy">
+                <span class="error" id="name-error"></span>
+            </div>
+            <div>
+                <label for="email">Crochet Email:</label>
+                <input type="email" id="email" name="email" placeholder="e.g. stitcher@yarnmail.com">
+                <span class="error" id="email-error"></span>
+            </div>
+            <div>
+                <label for="password">Secret Pattern Code:</label>
+                <input type="password" id="password" name="password" placeholder="At least 6 stitches">
+                <span class="error" id="password-error"></span>
+            </div>
+            <button type="submit">Join the Crew! �</button>
+            <div id="form-success" class="success"></div>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
